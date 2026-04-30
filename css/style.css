@@ -509,7 +509,130 @@ img {
 }
 
 /* ─── EDUCATION & STACK ─── */
-/* → Added in feat: add education section */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: var(--border);
+}
+
+.edu-col {
+  padding: 1.25rem;
+  border-right: var(--border);
+}
+
+.edu-col-right {
+  border-right: none;
+}
+
+.edu-col-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  padding-bottom: 8px;
+  border-bottom: var(--border);
+  font-family: 'Space Mono', monospace;
+}
+
+.edu-item {
+  padding: 0.75rem 0;
+  border-bottom: 1.5px solid var(--light);
+}
+
+.edu-item:last-of-type {
+  border-bottom: none;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+  gap: 0.5rem;
+}
+
+.edu-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: 'Space Mono', monospace;
+}
+
+.edu-date {
+  font-size: 10px;
+  color: #C8BC9E;
+  font-family: 'Space Mono', monospace;
+  white-space: nowrap;
+}
+
+.edu-subtitle {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: 'Space Mono', monospace;
+  line-height: 1.5;
+}
+
+/* Pills */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.pill {
+  font-size: 10px;
+  color: #5A4E38;
+  border: 1.5px solid var(--light);
+  padding: 4px 10px;
+  font-family: 'Space Mono', monospace;
+}
+
+.pill-learning {
+  color: var(--orange);
+  border-color: var(--orange);
+  background: var(--orange-soft);
+}
+
+/* CV download button */
+.btn-cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  padding: 8px 14px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  text-decoration: none;
+}
+
+.btn-cv-download:hover {
+  background: var(--orange);
+  color: var(--bg);
+}
+
+/* Education responsive */
+@media (max-width: 768px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-col {
+    border-right: none;
+    border-bottom: var(--border);
+  }
+
+  .edu-col-right {
+    border-bottom: none;
+  }
+}
 
 /* ─── CONTACT ─── */
 /* → Added in feat: add contact section */
