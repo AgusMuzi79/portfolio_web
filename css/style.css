@@ -635,10 +635,123 @@ img {
 }
 
 /* ─── CONTACT ─── */
-/* → Added in feat: add contact section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: var(--border);
+}
+
+.contact-left {
+  padding: 1.5rem;
+  border-right: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-right {
+  padding: 1.5rem;
+}
+
+.contact-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.contact-headline em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.contact-body {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-family: 'Space Mono', monospace;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1.5px solid var(--light);
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:first-child {
+  border-top: 1.5px solid var(--light);
+}
+
+.contact-link:hover .contact-link-value {
+  color: var(--orange);
+}
+
+.contact-link:hover .contact-link-arrow {
+  color: var(--ink);
+}
+
+.contact-link-platform {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C8BC9E;
+  width: 64px;
+  font-family: 'Space Mono', monospace;
+  flex-shrink: 0;
+}
+
+.contact-link-value {
+  font-size: 11px;
+  color: #5A4E38;
+  font-family: 'Space Mono', monospace;
+  flex: 1;
+}
+
+.contact-link-arrow {
+  font-size: 14px;
+  color: var(--orange);
+}
+
+/* Contact responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    border-right: none;
+    border-bottom: var(--border);
+  }
+}
 
 /* ─── FOOTER ─── */
-/* → Added in feat: add footer */
+.footer {
+  background: var(--ink);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: var(--border);
+}
+
+.footer-left {
+  font-size: 10px;
+  color: #5A4E38;
+  letter-spacing: 0.04em;
+  font-family: 'Space Mono', monospace;
+}
+
+.footer-right {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+}
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
