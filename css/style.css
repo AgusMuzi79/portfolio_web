@@ -5,13 +5,17 @@
 
 /* ─── VARIABLES ─── */
 :root {
-  --bg:          #F2EBD9;
-  --ink:         #1A1408;
-  --orange:      #E85D20;
-  --muted:       #8A7A60;
-  --light:       #E0D8C4;
-  --orange-soft: #FEF0E8;
-  --border:      2px solid #1A1408;
+  --bg:           #F2EBD9;
+  --ink:          #1A1408;
+  --orange:       #E85D20;
+  --muted:        #8A7A60;
+  --light:        #E0D8C4;
+  --orange-soft:  #FEF0E8;
+  --border-color: #1A1408;
+  --border:       2px solid var(--border-color);
+  --text-sec:     #5A4E38;   /* secondary text on light surfaces */
+  --subtle:       #C8BC9E;   /* very subtle labels / dates */
+  --surface-dark: #1A1408;   /* always-dark surface (bento-dark, footer) */
 }
 
 /* ─── RESET ─── */
@@ -221,7 +225,7 @@ img {
 
 .hero-sub {
   font-size: 12px;
-  color: #5A4E38;
+  color: var(--text-sec);
   line-height: 1.8;
   margin-top: 1rem;
   font-family: 'Space Mono', monospace;
@@ -399,7 +403,7 @@ img {
 }
 
 .bento-dark {
-  background: var(--ink);
+  background: var(--surface-dark);
 }
 
 .bento-no-bottom {
@@ -561,7 +565,7 @@ img {
 
 .edu-date {
   font-size: 10px;
-  color: #C8BC9E;
+  color: var(--subtle);
   font-family: 'Space Mono', monospace;
   white-space: nowrap;
 }
@@ -583,7 +587,7 @@ img {
 
 .pill {
   font-size: 10px;
-  color: #5A4E38;
+  color: var(--text-sec);
   border: 1.5px solid var(--light);
   padding: 4px 10px;
   font-family: 'Space Mono', monospace;
@@ -699,7 +703,7 @@ img {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #C8BC9E;
+  color: var(--subtle);
   width: 64px;
   font-family: 'Space Mono', monospace;
   flex-shrink: 0;
@@ -707,7 +711,7 @@ img {
 
 .contact-link-value {
   font-size: 11px;
-  color: #5A4E38;
+  color: var(--text-sec);
   font-family: 'Space Mono', monospace;
   flex: 1;
 }
@@ -731,7 +735,7 @@ img {
 
 /* ─── FOOTER ─── */
 .footer {
-  background: var(--ink);
+  background: var(--surface-dark);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -741,7 +745,7 @@ img {
 
 .footer-left {
   font-size: 10px;
-  color: #5A4E38;
+  color: var(--text-sec);
   letter-spacing: 0.04em;
   font-family: 'Space Mono', monospace;
 }
@@ -765,5 +769,37 @@ img {
 
   .nav-logo {
     font-size: 12px;
+  }
+}
+
+/* ─── DARK MODE ─── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #1A1408;
+    --ink:          #F2EBD9;
+    --muted:        #A89880;
+    --light:        #3A3020;
+    --orange-soft:  #2A1208;
+    --border-color: #3A3020;
+    --text-sec:     #A89880;
+    --subtle:       #6A5E48;
+    --surface-dark: #0E0A04;
+  }
+
+  /* lang-btn lives on the orange hero-right — keep cream colors fixed */
+  .lang-btn {
+    border-color: #F2EBD9;
+    color: #F2EBD9;
+  }
+
+  .lang-btn.active {
+    background: #F2EBD9;
+    color: var(--orange);
+  }
+
+  /* hero-right elements that use var(--bg): keep cream on orange */
+  .hero-r-name,
+  .avail-badge {
+    color: #F2EBD9;
   }
 }
