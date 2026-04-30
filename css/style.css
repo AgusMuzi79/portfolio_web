@@ -1,0 +1,205 @@
+/* ═══════════════════════════════════════════════
+   Agustín Muzi — Portfolio
+   Style: retro editorial, crema + naranja + negro
+   ═══════════════════════════════════════════════ */
+
+/* ─── VARIABLES ─── */
+:root {
+  --bg:          #F2EBD9;
+  --ink:         #1A1408;
+  --orange:      #E85D20;
+  --muted:       #8A7A60;
+  --light:       #E0D8C4;
+  --orange-soft: #FEF0E8;
+  --border:      2px solid #1A1408;
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── BASE ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ─── UTILITY: section header ─── */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.section-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: 'Space Mono', monospace;
+}
+
+/* ─── UTILITY: buttons ─── */
+.btn-primary {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: var(--orange);
+  color: var(--bg);
+  border: var(--border);
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--ink);
+}
+
+.btn-ghost {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--ink);
+  border: var(--border);
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  display: inline-block;
+}
+
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* ─── NAVBAR ─── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--bg);
+  border-bottom: var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 11px;
+  color: var(--ink);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+.nav-cta {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  background: var(--orange);
+  color: var(--bg);
+  padding: 8px 18px;
+  border: var(--border);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-cta:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* ─── HERO ─── */
+/* → Added in feat: add hero section */
+
+/* ─── STATS BAR ─── */
+/* → Added in feat: add stats bar */
+
+/* ─── PROJECTS ─── */
+/* → Added in feat: add projects section */
+
+/* ─── EDUCATION & STACK ─── */
+/* → Added in feat: add education section */
+
+/* ─── CONTACT ─── */
+/* → Added in feat: add contact section */
+
+/* ─── FOOTER ─── */
+/* → Added in feat: add footer */
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.875rem 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-logo {
+    font-size: 12px;
+  }
+}
