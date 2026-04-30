@@ -613,6 +613,11 @@ img {
   background: var(--orange-soft);
 }
 
+.pill-soft {
+  color: var(--muted);
+  border-color: var(--muted);
+}
+
 /* CV download button */
 .btn-cv-download {
   display: inline-flex;
