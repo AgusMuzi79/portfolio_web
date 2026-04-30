@@ -329,7 +329,38 @@ img {
 }
 
 /* ─── STATS BAR ─── */
-/* → Added in feat: add stats bar */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: var(--border);
+}
+
+.stat {
+  padding: 1rem 1.5rem;
+  border-right: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: 'Space Mono', monospace;
+}
 
 /* ─── PROJECTS ─── */
 /* → Added in feat: add projects section */
