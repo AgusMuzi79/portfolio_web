@@ -385,8 +385,8 @@ img {
   min-height: 180px;
 }
 
-/* Every 3rd card: no right border */
-.bento-card:nth-child(3n) {
+/* Cards at the visual right edge of the grid: no right border */
+.bento-no-right {
   border-right: none;
 }
 
