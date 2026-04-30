@@ -362,8 +362,151 @@ img {
   font-family: 'Space Mono', monospace;
 }
 
-/* ─── PROJECTS ─── */
-/* → Added in feat: add projects section */
+/* ─── SECTION WRAPPER ─── */
+.section {
+  padding: 1.5rem;
+  border-bottom: var(--border);
+}
+
+/* ─── PROJECTS — BENTO GRID ─── */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: var(--border);
+}
+
+.bento-card {
+  padding: 1.25rem;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+/* Every 3rd card: no right border */
+.bento-card:nth-child(3n) {
+  border-right: none;
+}
+
+.bento-wide {
+  grid-column: span 2;
+}
+
+.bento-orange {
+  background: var(--orange);
+}
+
+.bento-dark {
+  background: var(--ink);
+}
+
+.bento-no-bottom {
+  border-bottom: none;
+}
+
+/* Card tag (status pill) */
+.card-tag {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1.5px solid var(--light);
+  padding: 3px 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Space Mono', monospace;
+}
+
+.card-tag-white {
+  color: #F2C9A8;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Card title */
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.card-title em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.card-title-white {
+  color: var(--bg);
+}
+
+.card-title-white em {
+  color: var(--bg);
+}
+
+.card-title-italic {
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Card description */
+.card-desc {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 6px;
+  font-family: 'Space Mono', monospace;
+}
+
+.card-desc-white {
+  color: #F2C9A8;
+}
+
+/* Card arrow */
+.card-arrow {
+  font-size: 18px;
+  color: var(--orange);
+  margin-top: auto;
+  padding-top: 10px;
+  display: block;
+}
+
+.card-arrow-white {
+  color: var(--bg);
+}
+
+.card-arrow-muted {
+  color: var(--muted);
+}
+
+/* Bento responsive */
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-wide {
+    grid-column: span 1;
+  }
+
+  .bento-card:nth-child(3n) {
+    border-right: var(--border);
+  }
+
+  .bento-card {
+    border-right: none;
+  }
+
+  .bento-no-bottom {
+    border-bottom: var(--border);
+  }
+
+  .bento-card:last-child {
+    border-bottom: none;
+  }
+}
 
 /* ─── EDUCATION & STACK ─── */
 /* → Added in feat: add education section */
