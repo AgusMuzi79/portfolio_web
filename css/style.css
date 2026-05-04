@@ -814,4 +814,10 @@ img {
   .avail-badge {
     color: #F2EBD9;
   }
+
+  /* bento cards on dark/orange backgrounds: keep titles cream */
+  .card-title-white,
+  .card-title-white em {
+    color: #F2EBD9;
+  }
 }
