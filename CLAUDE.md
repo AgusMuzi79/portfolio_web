@@ -192,7 +192,7 @@ Layout: 2 columnas con borde divisor.
 - Izquierda: headline Playfair con `<em>` naranja, texto body, boton "Get in touch"
 - Derecha: 3 links con plataforma (label subtle) + valor + flecha naranja
   - Email: agusmuzi79@gmail.com (email real del usuario)
-  - LinkedIn: /in/agustinmuzi (placeholder — verificar URL antes de deploy)
+  - LinkedIn: /in/agusmuzi79 (URL verificada)
   - GitHub: /AgusMuzi79 (handle real del usuario)
 
 ### Footer — completo
