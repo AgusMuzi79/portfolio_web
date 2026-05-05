@@ -140,7 +140,7 @@ npx serve .
 
 ## Deploy
 
-Hosted on GitHub Pages from the `main` branch. Push to `main` and the site updates automatically.
+Hosted on Vercel. Push to `main` and the site updates automatically.
 
 ---
 

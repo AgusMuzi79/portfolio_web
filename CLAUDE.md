@@ -4,7 +4,7 @@
 
 Portfolio web de una sola pagina (single-page, scroll continuo) que funciona simultaneamente como portfolio de proyectos y CV profesional. Objetivo principal: conseguir empleo como AI Automation Engineer. Audiencia secundaria: clientes freelance.
 
-Deploy: GitHub Pages desde la rama `main` — https://agusmazi79.github.io/portfolio_web
+Deploy: Vercel — rama `main` (auto-deploy en cada push)
 
 ---
 
