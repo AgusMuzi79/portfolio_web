@@ -696,6 +696,10 @@ img {
   font-family: 'Space Mono', monospace;
 }
 
+.contact-left .btn-primary {
+  align-self: flex-start;
+}
+
 .contact-link {
   display: flex;
   align-items: center;
