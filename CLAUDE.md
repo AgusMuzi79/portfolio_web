@@ -34,7 +34,8 @@ portfolio_web/
 ├── js/
 │   └── main.js       — switch EN/ES, modal de proyecto, terminal de contacto
 ├── assets/
-│   └── cv.pdf        — CV descargable (pendiente agregar)
+│   ├── cv.pdf        — CV descargable (pendiente agregar)
+│   └── favicon.svg   — favicon "am_" (mismo estilo que el logo del nav/footer)
 ├── CLAUDE.md         — este archivo
 └── README.md         — documentacion publica del repo
 ```
