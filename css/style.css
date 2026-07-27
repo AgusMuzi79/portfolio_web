@@ -574,6 +574,8 @@ em { font-style: italic; color: var(--primary); }
 .modal__bullet-arrow { color: var(--accent); font-family: var(--font-mono); line-height: 1.5; }
 .modal__bullet span:last-child { font-size: var(--text-sm); color: var(--text); line-height: 1.5; }
 .modal__tags { display: flex; gap: 7px; flex-wrap: wrap; padding-top: 20px; border-top: var(--border-2) solid var(--border); }
+.modal__link { margin-top: 22px; }
+.modal__link[hidden] { display: none; }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {

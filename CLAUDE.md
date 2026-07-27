@@ -120,7 +120,7 @@ Con HTML interno (`<em>`, `<span class="accent-dot">`) — agregar `data-html="t
 
 ### Contenido dinamico bilingue (no usa data-en/data-es directo)
 
-- **Project cards** (`.project-card`): `data-name-en/es`, `data-long-en/es`, `data-bullets-en/es` (separadas por `|`), `data-stack` (separadas por `,`), `data-status` (`dev`/`soon`) — leidos por JS al abrir el modal
+- **Project cards** (`.project-card`): `data-name-en/es`, `data-long-en/es`, `data-bullets-en/es` (separadas por `|`), `data-stack` (separadas por `,`), `data-status` (`live`/`dev`/`soon`), `data-url` opcional (si el proyecto tiene demo publica, el modal muestra un boton "Visit site") — leidos por JS al abrir el modal
 - **Terminal de contacto**: respuestas de los comandos (`whoami`, `contact --email/--linkedin/--github`, `open cv`) estan hardcodeadas en el objeto `RESPONSES` de `main.js`, no en el HTML
 
 ---
@@ -137,7 +137,11 @@ Con HTML interno (`<em>`, `<span class="accent-dot">`) — agregar `data-html="t
 Bio + pill de disponibilidad (izquierda) / grid 2x2 de stats: ubicacion, proyectos, idiomas, estado (derecha).
 
 ### Projects (`01 // projects`) — completo
-Grid de 2 columnas, 4 cards interactivas (WhatsApp Lead Qualifier, Property Listing Generator, Agenda Concierge, Club Management App). Click o Enter/Espacio (con foco) abre el modal de detalle (`#project-modal`) con icono, badge, descripcion larga, bullets y stack tags.
+Grid de 2 columnas, 2 cards interactivas — solo proyectos reales, sin placeholders ficticios:
+- **Uncas Tenis Tour** — plataforma de inscripcion y pago para un torneo de tenis, en produccion (Next.js + Vercel). Repo privado; el card linkea al sitio en vivo (`data-url`), el modal muestra boton "Visit site".
+- **UNCAS Club App** — app de gestion interna para un club de rugby (60+ staff, 1000+ socios, 17 equipos): credencial QR rotativa, asistencia y lesiones (offline), cobro de cuotas con MercadoPago. React Native + Next.js + Supabase. Repo privado del club, sin link publico — solo case study en el modal.
+
+Click o Enter/Espacio (con foco) abre el modal de detalle (`#project-modal`) con icono, badge, descripcion larga, bullets, stack tags y (si aplica) boton "Visit site".
 
 ### Education & Stack (`02 // education & stack`) — completo
 Columna izquierda: lista de formacion (UNICEN, UTN, BIG School, Udemy x2) + boton descargar CV. Columna derecha: panel de tech stack con barras de progreso, panel de idiomas + soft skills tags.

@@ -38,11 +38,12 @@ var currentLang = 'en';
 /* ─── Project detail modal ─── */
 (function () {
   var STATUS_LABEL = {
+    live: { en: 'live in production', es: 'en producción', variant: 'badge--green' },
     dev: { en: 'in development', es: 'en desarrollo', variant: 'badge--green' },
     soon: { en: 'coming soon', es: 'próximamente', variant: 'badge--hazard' }
   };
 
-  var overlay, iconEl, titleEl, statusEl, longEl, bulletsEl, tagsEl, closeBtn;
+  var overlay, iconEl, titleEl, statusEl, longEl, bulletsEl, tagsEl, linkEl, closeBtn;
   var activeCard = null;
 
   function render(card) {
@@ -70,6 +71,13 @@ var currentLang = 'en';
       tag.textContent = t;
       tagsEl.appendChild(tag);
     });
+
+    if (card.dataset.url) {
+      linkEl.href = card.dataset.url;
+      linkEl.hidden = false;
+    } else {
+      linkEl.hidden = true;
+    }
   }
 
   function openModal(card) {
@@ -95,6 +103,7 @@ var currentLang = 'en';
     longEl = document.getElementById('modal-long');
     bulletsEl = document.getElementById('modal-bullets');
     tagsEl = document.getElementById('modal-tags');
+    linkEl = document.getElementById('modal-link');
     closeBtn = document.getElementById('modal-close');
 
     document.querySelectorAll('.project-card').forEach(function (card) {
