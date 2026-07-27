@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="7" fill="#16131D"/>
+  <text x="5" y="23" font-family="'Space Mono', 'SFMono-Regular', ui-monospace, monospace" font-weight="700" font-size="16" fill="#F1EFF6">a</text>
+  <text x="14" y="23" font-family="Georgia, serif" font-weight="700" font-style="italic" font-size="16" fill="#9B7CF0">m</text>
+  <rect x="25.5" y="24.5" width="5" height="2.6" fill="#9FE870"/>
+</svg>
