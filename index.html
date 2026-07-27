@@ -11,359 +11,450 @@
   <title>Agustín Muzi — AI Automation Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ─── NAVBAR ─── -->
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="nav-left">
-      <div class="nav-lang" aria-label="Language selector">
-        <button class="nav-lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-        <span class="nav-lang-sep" aria-hidden="true">·</span>
-        <button class="nav-lang-btn" data-lang="es" aria-pressed="false">ES</button>
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <header class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="#top" class="logo" aria-label="Agustín Muzi — Home">agus<span class="logo__accent">mu</span>zi<span class="logo__cursor">_</span></a>
+      <nav class="nav-links">
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#education" data-en="Education" data-es="Educación">Education</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span class="badge badge--green"><span class="badge__dot" aria-hidden="true"></span><span data-en="available" data-es="disponible">available</span></span>
+        <div class="lang-switch" aria-label="Language selector">
+          <button class="nav-lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <button class="nav-lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        </div>
+        <a href="https://github.com/AgusMuzi79" target="_blank" rel="noreferrer" aria-label="GitHub" class="icon-link nav-github">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--primary btn--sm nav-cta" data-en="Hire me" data-es="Contáctame">Hire me</a>
       </div>
-      <a href="#" class="nav-logo" aria-label="Agustín Muzi — Home">AGUSTÍN MUZI</a>
     </div>
-    <div class="nav-links">
-      <a href="#projects"
-         data-en="Projects"
-         data-es="Proyectos">Projects</a>
-      <a href="#education"
-         data-en="Education"
-         data-es="Formación">Education</a>
-      <a href="#contact"
-         data-en="Contact"
-         data-es="Contacto">Contact</a>
-    </div>
-    <a href="#contact" class="nav-cta"
-       data-en="Hire me"
-       data-es="Contratame">Hire me</a>
-  </nav>
+  </header>
 
-
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <!-- Left column -->
-    <div class="hero-left">
-      <div class="hero-left-top">
-        <p class="eyebrow"
-           data-en="// AI Automation Engineer"
-           data-es="// Ingeniero de Automatización con IA">// AI Automation Engineer</p>
-        <h1 class="hero-headline"
-            data-html="true"
-            data-en="I build the AI layer between your tools and your <em>goals.</em>"
-            data-es="Construyo la capa de IA entre tus herramientas y tus <em>objetivos.</em>">
-          I build the AI layer between your tools and your <em>goals.</em>
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="top" class="hero">
+    <div class="hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob-2" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker" data-en="// AI automation engineer" data-es="// ingeniero en automatización con IA">// AI automation engineer</p>
+        <h1 data-html="true"
+            data-en="I build the AI layer between your tools and your <em>goals</em><span class=&quot;accent-dot&quot;>.</span>"
+            data-es="Construyo la capa de IA entre tus herramientas y tus <em>objetivos</em><span class=&quot;accent-dot&quot;>.</span>">
+          I build the AI layer between your tools and your <em>goals</em><span class="accent-dot">.</span>
         </h1>
-        <p class="hero-sub"
-           data-en="I design AI systems that eliminate repetitive work and scale business processes."
-           data-es="Diseño sistemas de inteligencia artificial que eliminan el trabajo repetitivo y escalan procesos de negocio.">I design AI systems that eliminate repetitive work and scale business processes.</p>
+        <p class="lead"
+           data-en="I design AI systems that eliminate repetitive work and scale business processes. Less manual busywork, more signal."
+           data-es="Diseño sistemas de IA que eliminan el trabajo repetitivo y escalan procesos de negocio. Menos tareas manuales, más señal.">
+          I design AI systems that eliminate repetitive work and scale business processes. Less manual busywork, more signal.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn--primary" data-en="See projects" data-es="Ver proyectos">
+            See projects
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="assets/cv.pdf" target="_blank" class="btn btn--secondary" data-en="Download CV" data-es="Descargar CV">
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></span>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">python</span>
+          <span class="tag">claude-api</span>
+          <span class="tag">n8n</span>
+          <span class="tag">langchain</span>
+        </div>
       </div>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary"
-           data-en="See projects"
-           data-es="Ver proyectos">See projects</a>
-        <a href="assets/cv.pdf" class="btn-ghost" download
-           data-en="Download CV"
-           data-es="Descargar CV">Download CV</a>
+      <div>
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dots">
+              <span class="terminal__dot terminal__dot--1"></span>
+              <span class="terminal__dot terminal__dot--2"></span>
+              <span class="terminal__dot terminal__dot--3"></span>
+            </span>
+            <span class="terminal__title">agusmuzi — whoami</span>
+          </div>
+          <div class="terminal__body">
+            <span class="terminal__line"><span class="terminal__prompt">~</span>whoami</span>
+            <span class="terminal__line terminal__dim" data-en="// AI automation engineer · builder" data-es="// ingeniero en automatización con IA · builder">// AI automation engineer · builder</span>
+            <span class="terminal__line">name<span class="terminal__dim">......</span> Agustín Muzi</span>
+            <span class="terminal__line">stack<span class="terminal__dim">.....</span> python · claude · n8n · langchain</span>
+            <span class="terminal__line">focus<span class="terminal__dim">.....</span> <span data-en="AI automation" data-es="automatización con IA">AI automation</span></span>
+            <span class="terminal__line">status<span class="terminal__dim">....</span> <span class="terminal__ok" data-en="available for work" data-es="disponible para trabajar">available for work</span></span>
+            <span class="terminal__line"><span class="terminal__prompt">~</span>deploy <span class="terminal__warn">--automation</span></span>
+            <span class="terminal__caret" aria-hidden="true"></span>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="hazard-bar" aria-hidden="true"></div>
+  </section>
 
-    <!-- Right column (orange background) -->
-    <div class="hero-right">
-      <div class="hero-right-top">
-        <p class="hero-r-label">// Who am I</p>
-        <p class="hero-r-name">Agustín<br>Muzi</p>
-        <p class="hero-r-title">AI Automation Engineer</p>
-        <p class="hero-r-desc"
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div>
+        <p class="kicker" data-en="// who am I" data-es="// quién soy">// who am I</p>
+        <h2>Agustín<br>Muzi<span class="accent-dot">.</span></h2>
+        <p class="about-role">AI Automation Engineer</p>
+        <p class="about-bio"
            data-en="Early in my career, with a clear direction. I don't have years of experience yet — but I have projects that show how I think, how I build, and how I solve problems."
-           data-es="Estoy comenzando mi carrera, pero con una dirección clara. No tengo años de experiencia formal todavía — pero tengo proyectos que muestran cómo pienso, cómo construyo y cómo resuelvo problemas.">Early in my career, with a clear direction. I don't have years of experience yet — but I have projects that show how I think, how I build, and how I solve problems.</p>
+           data-es="Al inicio de mi carrera, con una dirección clara. Todavía no tengo años de experiencia — pero tengo proyectos que muestran cómo pienso, cómo construyo y cómo resuelvo problemas.">
+          Early in my career, with a clear direction. I don't have years of experience yet — but I have projects that show how I think, how I build, and how I solve problems.
+        </p>
+        <div class="avail-pill">
+          <span class="avail-pill__dot" aria-hidden="true"></span>
+          <span data-en="Available for projects & employment" data-es="Disponible para proyectos y empleo">Available for projects &amp; employment</span>
+        </div>
       </div>
-      <div class="hero-right-bottom">
-        <div class="avail-badge">
-          <span class="avail-dot" aria-hidden="true"></span>
-          <span data-en="Available for projects &amp; employment"
-                data-es="Disponible para proyectos y empleo">Available for projects &amp; employment</span>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <p class="stat-box__label" data-en="location" data-es="ubicación">location</p>
+          <p class="stat-box__value">Buenos Aires, AR</p>
+        </div>
+        <div class="stat-box">
+          <p class="stat-box__label" data-en="projects" data-es="proyectos">projects</p>
+          <p class="stat-box__value">4</p>
+        </div>
+        <div class="stat-box">
+          <p class="stat-box__label" data-en="languages" data-es="idiomas">languages</p>
+          <p class="stat-box__value">ES / EN</p>
+        </div>
+        <div class="stat-box">
+          <p class="stat-box__label" data-en="status" data-es="estado">status</p>
+          <p class="stat-box__value" data-en="available" data-es="disponible">available</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── STATS BAR ─── -->
-  <div class="stats-bar" role="list" aria-label="Stats">
-    <div class="stat" role="listitem">
-      <span class="stat-number">2026</span>
-      <span class="stat-label">Buenos Aires, AR</span>
+  <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="kicker" data-en="01 // projects" data-es="01 // proyectos">01 // projects</p>
+          <h2 data-en="Projects & experiments" data-es="Proyectos & experimentos">Projects &amp; experiments</h2>
+        </div>
+        <p class="section-note" data-en="// tap a card for the details" data-es="// tocá una card para ver el detalle">// tap a card for the details</p>
+      </div>
+      <div class="project-grid">
+
+        <div class="card card--interactive card--accent-violet project-card"
+             tabindex="0" role="button"
+             data-name-en="WhatsApp Lead Qualifier" data-name-es="WhatsApp Lead Qualifier"
+             data-status="dev"
+             data-long-en="A conversational agent wired into WhatsApp that greets every lead instantly, asks the right questions to gauge buying intent, and books the visit into the realtor's calendar — no human in the loop."
+             data-long-es="Un agente conversacional conectado a WhatsApp que atiende cada lead al instante, hace las preguntas correctas para medir intención de compra y agenda la visita en el calendario del agente — sin intervención humana."
+             data-bullets-en="Answers 24/7 without rigid templates|Detects and scores buying intent|Books visits automatically"
+             data-bullets-es="Responde 24/7 sin plantillas rígidas|Detecta y puntúa la intención de compra|Agenda visitas automáticamente"
+             data-stack="whatsapp-api,claude,n8n">
+          <span class="card__accent" aria-hidden="true"></span>
+          <div class="project-card__top">
+            <span class="project-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+            <span class="badge badge--green" data-status-badge data-en="in development" data-es="en desarrollo">in development</span>
+          </div>
+          <h3>WhatsApp Lead Qualifier</h3>
+          <p data-en="WhatsApp agent that qualifies real-estate leads 24/7 — answers, detects interest and books visits on its own."
+             data-es="Agente de WhatsApp que califica leads inmobiliarios 24/7 — responde, detecta interés y agenda visitas solo.">
+            WhatsApp agent that qualifies real-estate leads 24/7 — answers, detects interest and books visits on its own.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">whatsapp-api</span>
+            <span class="tag">claude</span>
+            <span class="tag">n8n</span>
+          </div>
+          <span class="project-card__more" data-en="view details →" data-es="ver detalle →">view details →</span>
+        </div>
+
+        <div class="card card--interactive card--accent-green project-card"
+             tabindex="0" role="button"
+             data-name-en="Property Listing Generator" data-name-es="Property Listing Generator"
+             data-status="soon"
+             data-long-en="A tool that takes a handful of photos and minimal data and returns a persuasive listing: title, description and portal-optimized bullets, in seconds."
+             data-long-es="Herramienta que toma un puñado de fotos y datos mínimos y devuelve un aviso persuasivo: título, descripción y bullets optimizados para portales inmobiliarios, en segundos."
+             data-bullets-en="From 3 photos to a full listing|Portal-optimized copy|Publish-ready in seconds"
+             data-bullets-es="De 3 fotos a un aviso completo|Copy optimizado para portales|Listo para publicar en segundos"
+             data-stack="claude,vision,python">
+          <span class="card__accent" aria-hidden="true"></span>
+          <div class="project-card__top">
+            <span class="project-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></span>
+            <span class="badge badge--hazard" data-status-badge data-en="coming soon" data-es="próximamente">coming soon</span>
+          </div>
+          <h3>Property Listing Generator</h3>
+          <p data-en="Upload 3 photos and basic data — get a compelling property listing ready to publish in seconds."
+             data-es="Subís 3 fotos y datos básicos — obtenés un aviso de propiedad listo para publicar en segundos.">
+            Upload 3 photos and basic data — get a compelling property listing ready to publish in seconds.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">claude</span>
+            <span class="tag">vision</span>
+            <span class="tag">python</span>
+          </div>
+          <span class="project-card__more" data-en="view details →" data-es="ver detalle →">view details →</span>
+        </div>
+
+        <div class="card card--interactive card--accent-hazard project-card"
+             tabindex="0" role="button"
+             data-name-en="Agenda Concierge" data-name-es="Agenda Concierge"
+             data-status="soon"
+             data-long-en="A concierge that syncs the agent's calendar, offers open slots to prospects and fires automatic visit reminders to cut down no-shows."
+             data-long-es="Un concierge que sincroniza el calendario del agente, ofrece los horarios libres a los prospectos y dispara recordatorios automáticos de visita para reducir el no-show."
+             data-bullets-en="Real-time calendar sync|Offers open slots to the prospect|Automatic anti-no-show reminders"
+             data-bullets-es="Sincroniza el calendario en tiempo real|Ofrece slots disponibles al prospecto|Recordatorios automáticos anti no-show"
+             data-stack="calendar-api,n8n,claude">
+          <span class="card__accent" aria-hidden="true"></span>
+          <div class="project-card__top">
+            <span class="project-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span>
+            <span class="badge badge--hazard" data-status-badge data-en="coming soon" data-es="próximamente">coming soon</span>
+          </div>
+          <h3>Agenda Concierge</h3>
+          <p data-en="Syncs the agent's calendar, offers open slots and sends automatic reminders to cut no-shows."
+             data-es="Sincroniza el calendario del agente, ofrece horarios disponibles y envía recordatorios para reducir ausencias.">
+            Syncs the agent's calendar, offers open slots and sends automatic reminders to cut no-shows.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">calendar-api</span>
+            <span class="tag">n8n</span>
+            <span class="tag">claude</span>
+          </div>
+          <span class="project-card__more" data-en="view details →" data-es="ver detalle →">view details →</span>
+        </div>
+
+        <div class="card card--interactive card--accent-violet project-card"
+             tabindex="0" role="button"
+             data-name-en="Club Management App" data-name-es="Club Management App"
+             data-status="dev"
+             data-long-en="A mobile app that centralizes member management: digital ID with offline QR, payments via virtual wallets and club communications, all in one place."
+             data-long-es="Aplicación móvil que centraliza la gestión de socios: credencial digital con QR offline, pagos vía billeteras virtuales y las comunicaciones del club en un solo lugar."
+             data-bullets-en="Digital ID with offline QR|Payments via virtual wallets|Centralized club communications"
+             data-bullets-es="Credencial digital con QR offline|Pagos con billeteras virtuales|Comunicación del club centralizada"
+             data-stack="react-native,supabase,payments">
+          <span class="card__accent" aria-hidden="true"></span>
+          <div class="project-card__top">
+            <span class="project-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+            <span class="badge badge--green" data-status-badge data-en="in development" data-es="en desarrollo">in development</span>
+          </div>
+          <h3>Club Management App</h3>
+          <p data-en="Mobile app that centralizes member management, digital ID with offline QR, payments and club communication."
+             data-es="App móvil que centraliza gestión de socios, credencial digital con QR offline, pagos y comunicación del club.">
+            Mobile app that centralizes member management, digital ID with offline QR, payments and club communication.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">react-native</span>
+            <span class="tag">supabase</span>
+            <span class="tag">payments</span>
+          </div>
+          <span class="project-card__more" data-en="view details →" data-es="ver detalle →">view details →</span>
+        </div>
+
+      </div>
     </div>
-    <div class="stat" role="listitem">
-      <span class="stat-number">4</span>
-      <span class="stat-label"
-            data-en="Projects"
-            data-es="Proyectos">Projects</span>
+  </section>
+
+  <!-- ═══════════════════ EDUCATION & STACK ═══════════════════ -->
+  <section id="education" class="education">
+    <div class="container">
+      <p class="kicker" data-en="02 // education & stack" data-es="02 // educación & stack">02 // education &amp; stack</p>
+      <h2 data-en="Training & tooling" data-es="Formación & herramientas">Training &amp; tooling</h2>
+      <div class="education-grid">
+        <div>
+          <p class="sub-kicker" data-en="// training" data-es="// formación">// training</p>
+          <div>
+            <div class="training-row">
+              <div>
+                <p class="training-row__inst">UNICEN</p>
+                <p class="training-row__meta" data-en="2023 — present" data-es="2023 — presente">2023 — present</p>
+              </div>
+              <p class="training-row__title" data-en="Diploma in Software Application Development" data-es="Tecnicatura en Desarrollo de Aplicaciones Informáticas">Diploma in Software Application Development</p>
+            </div>
+            <div class="training-row">
+              <div>
+                <p class="training-row__inst">UTN</p>
+                <p class="training-row__meta" data-en="in progress" data-es="en curso">in progress</p>
+              </div>
+              <p class="training-row__title" data-en="Diploma: Mastering Python — from basics to advanced for AI" data-es="Diplomado: Dominando Python — de básico a avanzado para IA">Diploma: Mastering Python — from basics to advanced for AI</p>
+            </div>
+            <div class="training-row">
+              <div>
+                <p class="training-row__inst">BIG School</p>
+                <p class="training-row__meta" data-en="certified · mar 2026" data-es="certificado · mar 2026">certified · mar 2026</p>
+              </div>
+              <p class="training-row__title" data-en="Building with AI: from 0 to Production" data-es="Desarrollo con IA: de 0 a Producción">Building with AI: from 0 to Production</p>
+            </div>
+            <div class="training-row">
+              <div>
+                <p class="training-row__inst">Udemy</p>
+                <p class="training-row__meta" data-en="in progress" data-es="en curso">in progress</p>
+              </div>
+              <p class="training-row__title">The Python Mega Course: Build 10 Real-World Applications</p>
+            </div>
+            <div class="training-row">
+              <div>
+                <p class="training-row__inst">Udemy</p>
+                <p class="training-row__meta" data-en="in progress" data-es="en curso">in progress</p>
+              </div>
+              <p class="training-row__title" data-en="Testing & QA: A Guide to Software Testing" data-es="Testing & QA: Guía para Pruebas de Software">Testing &amp; QA: A Guide to Software Testing</p>
+            </div>
+          </div>
+          <a href="assets/cv.pdf" target="_blank" class="btn btn--secondary" data-en="Download full CV (PDF)" data-es="Descargar CV completo (PDF)">
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></span>
+            Download full CV (PDF)
+          </a>
+        </div>
+        <div class="stack-col">
+          <div class="panel">
+            <p class="sub-kicker" data-en="// tech stack" data-es="// tech stack">// tech stack</p>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">Python</span><span class="stack-item__lvl" data-en="intermediate" data-es="intermedio">intermediate</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:65%"></div></div>
+            </div>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">Folium</span><span class="stack-item__lvl" data-en="used in projects" data-es="usado en proyectos">used in projects</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:55%"></div></div>
+            </div>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">Claude API</span><span class="stack-item__lvl" data-en="learning" data-es="aprendiendo">learning</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:40%"></div></div>
+            </div>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">OpenAI API</span><span class="stack-item__lvl" data-en="learning" data-es="aprendiendo">learning</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:40%"></div></div>
+            </div>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">n8n</span><span class="stack-item__lvl" data-en="learning" data-es="aprendiendo">learning</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:35%"></div></div>
+            </div>
+            <div class="stack-item">
+              <div class="stack-item__top"><span class="stack-item__name">LangChain</span><span class="stack-item__lvl" data-en="learning" data-es="aprendiendo">learning</span></div>
+              <div class="stack-item__track"><div class="stack-item__fill" style="width:30%"></div></div>
+            </div>
+          </div>
+          <div class="panel">
+            <p class="sub-kicker" data-en="// languages" data-es="// idiomas">// languages</p>
+            <div class="lang-list">
+              <span data-en="Spanish — native" data-es="Español — nativo">Spanish — native</span>
+              <span data-en="English — professional" data-es="Inglés — profesional">English — professional</span>
+            </div>
+            <p class="sub-kicker" data-en="// soft skills" data-es="// soft skills">// soft skills</p>
+            <div class="soft-tags">
+              <span class="tag tag--plain" data-en="Fast learner" data-es="Aprende rápido">Fast learner</span>
+              <span class="tag tag--plain" data-en="Problem solving" data-es="Resolución de problemas">Problem solving</span>
+              <span class="tag tag--plain" data-en="Team collaboration" data-es="Trabajo en equipo">Team collaboration</span>
+              <span class="tag tag--plain" data-en="Adaptability" data-es="Adaptabilidad">Adaptability</span>
+              <span class="tag tag--plain" data-en="Clear communication" data-es="Comunicación clara">Clear communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="stat" role="listitem">
-      <span class="stat-number">ES / EN</span>
-      <span class="stat-label"
-            data-en="Bilingual"
-            data-es="Bilingüe">Bilingual</span>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="kicker" data-en="03 // contact" data-es="03 // contacto">03 // contact</p>
+        <h2 data-html="true"
+            data-en="Got a process to <em>automate</em>?"
+            data-es="¿Tenés un proceso para <em>automatizar</em>?">
+          Got a process to <em>automate</em>?
+        </h2>
+        <p class="contact-sub"
+           data-en="Write to me and let's talk. Available for freelance projects and job opportunities."
+           data-es="Escribime y hablamos. Disponible para proyectos freelance y oportunidades laborales.">
+          Write to me and let's talk. Available for freelance projects and job opportunities.
+        </p>
+        <a href="mailto:agusmuzi79@gmail.com" class="btn btn--primary" data-en="Get in touch" data-es="Escribime">
+          <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="0"/><path d="M22 7l-10 5L2 7"/></svg></span>
+          Get in touch
+        </a>
+      </div>
+      <div>
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dots">
+              <span class="terminal__dot terminal__dot--1"></span>
+              <span class="terminal__dot terminal__dot--2"></span>
+              <span class="terminal__dot terminal__dot--3"></span>
+            </span>
+            <span class="terminal__title">agusmuzi — contact</span>
+          </div>
+          <div class="terminal__body" id="contact-terminal-body">
+            <span class="terminal__line"><span class="terminal__prompt">~</span>help</span>
+            <span class="terminal__line terminal__dim" data-en="// tap a command below ↓" data-es="// tocá un comando abajo ↓">// tap a command below ↓</span>
+            <span class="terminal__caret" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="term-cmds">
+          <button type="button" class="term-cmd-btn" data-cmd="whoami">whoami</button>
+          <button type="button" class="term-cmd-btn" data-cmd="email">contact --email</button>
+          <button type="button" class="term-cmd-btn" data-cmd="linkedin">contact --linkedin</button>
+          <button type="button" class="term-cmd-btn" data-cmd="github">contact --github</button>
+          <button type="button" class="term-cmd-btn" data-cmd="cv">open cv</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <div class="hazard-bar hazard-bar--violet" aria-hidden="true"></div>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <a href="#top" class="logo" aria-label="Agustín Muzi — Home">agus<span class="logo__accent">mu</span>zi<span class="logo__cursor">_</span></a>
+        <p class="footer-copy">© 2026 Agustín Muzi · AI Automation Engineer</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:agusmuzi79@gmail.com" class="icon-link footer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="0"/><path d="M22 7l-10 5L2 7"/></svg>
+          email
+        </a>
+        <a href="https://www.linkedin.com/in/agusmuzi79" target="_blank" rel="noreferrer" class="icon-link footer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="9" width="4" height="12" rx="0"/><circle cx="4" cy="4" r="2"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v1.5"/></svg>
+          linkedin
+        </a>
+        <a href="https://github.com/AgusMuzi79" target="_blank" rel="noreferrer" class="icon-link footer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          github
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ PROJECT DETAIL MODAL ═══════════════════ -->
+  <div class="modal-overlay" id="project-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__accent" aria-hidden="true"></div>
+      <div class="modal__body">
+        <div class="modal__head">
+          <div class="modal__head-left">
+            <span class="modal__icon" id="modal-icon"></span>
+            <div>
+              <h3 class="modal__title" id="modal-title"></h3>
+              <span class="badge" id="modal-status"></span>
+            </div>
+          </div>
+          <button type="button" class="modal__close" id="modal-close" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <p class="modal__long" id="modal-long"></p>
+        <p class="sub-kicker" data-en="// what it does" data-es="// qué hace">// what it does</p>
+        <div class="modal__bullets" id="modal-bullets"></div>
+        <div class="modal__tags" id="modal-tags"></div>
+      </div>
     </div>
   </div>
-
-  <!-- ─── PROJECTS ─── -->
-  <section class="section" id="projects" aria-labelledby="projects-label">
-    <div class="section-header">
-      <span class="section-num">01 //</span>
-      <span class="section-label" id="projects-label"
-            data-en="Projects"
-            data-es="Proyectos">Projects</span>
-    </div>
-
-    <div class="bento-grid">
-      <!-- Card 1: WhatsApp Lead Qualifier — wide, orange bg -->
-      <article class="bento-card bento-wide bento-orange">
-        <div>
-          <span class="card-tag card-tag-white"
-                data-en="In development"
-                data-es="En desarrollo">In development</span>
-          <h3 class="card-title card-title-white"
-              data-html="true"
-              data-en="WhatsApp Lead <em>Qualifier</em>"
-              data-es="Calificador de Leads por <em>WhatsApp</em>">WhatsApp Lead <em>Qualifier</em></h3>
-          <p class="card-desc card-desc-white"
-             data-en="WhatsApp agent that qualifies real estate leads 24/7 — answers questions, detects interest and books appointments automatically."
-             data-es="Agente de WhatsApp que califica leads inmobiliarios las 24hs — responde preguntas, detecta interés y agenda visitas automáticamente.">WhatsApp agent that qualifies real estate leads 24/7 — answers questions, detects interest and books appointments automatically.</p>
-        </div>
-        <span class="card-arrow card-arrow-white" aria-hidden="true">→</span>
-      </article>
-
-      <!-- Card 2: Property Listing Generator — dark bg, last col in row 1 -->
-      <article class="bento-card bento-dark bento-no-right">
-        <div>
-          <span class="card-tag card-tag-white"
-                data-en="Coming soon"
-                data-es="Próximamente">Coming soon</span>
-          <h3 class="card-title card-title-white card-title-italic"
-              data-en="Property Listing Generator"
-              data-es="Generador de Fichas de Propiedades">Property Listing Generator</h3>
-          <p class="card-desc card-desc-white"
-             data-en="Upload 3 photos and basic data — get a compelling property listing ready to publish in seconds."
-             data-es="Subí 3 fotos y datos básicos — obtenés una ficha de propiedad lista para publicar en segundos.">Upload 3 photos and basic data — get a compelling property listing ready to publish in seconds.</p>
-        </div>
-        <span class="card-arrow card-arrow-muted" aria-hidden="true">→</span>
-      </article>
-
-      <!-- Card 3: Agenda Concierge — cream bg -->
-      <article class="bento-card bento-no-bottom">
-        <div>
-          <span class="card-tag"
-                data-en="Coming soon"
-                data-es="Próximamente">Coming soon</span>
-          <h3 class="card-title card-title-italic"
-              data-en="Agenda Concierge"
-              data-es="Concierge de Agendas">Agenda Concierge</h3>
-          <p class="card-desc"
-             data-en="Syncs the agent's calendar, offers available slots to prospects and sends automatic visit reminders to cut no-shows."
-             data-es="Sincroniza la agenda del agente, ofrece horarios disponibles y envía recordatorios automáticos para reducir los plantones.">Syncs the agent's calendar, offers available slots to prospects and sends automatic visit reminders to cut no-shows.</p>
-        </div>
-        <span class="card-arrow card-arrow-muted" aria-hidden="true">→</span>
-      </article>
-
-      <!-- Card 4: Club Management App — cream bg, spans cols 2-3 -->
-      <article class="bento-card bento-wide bento-no-right bento-no-bottom">
-        <div>
-          <span class="card-tag"
-                data-en="In development"
-                data-es="En desarrollo">In development</span>
-          <h3 class="card-title card-title-italic"
-              data-en="Club Management App"
-              data-es="App de Gestión de Club">Club Management App</h3>
-          <p class="card-desc"
-             data-en="Mobile app that centralizes member management, digital ID with offline QR, payments via virtual wallets and club communications."
-             data-es="App móvil que centraliza la gestión de socios, carnet digital con QR offline, pagos por billeteras virtuales y comunicación del club.">Mobile app that centralizes member management, digital ID with offline QR, payments via virtual wallets and club communications.</p>
-        </div>
-        <span class="card-arrow card-arrow-muted" aria-hidden="true">→</span>
-      </article>
-    </div>
-  </section>
-
-  <!-- ─── EDUCATION & STACK ─── -->
-  <section class="section" id="education" aria-labelledby="education-label">
-    <div class="section-header">
-      <span class="section-num">03 //</span>
-      <span class="section-label" id="education-label"
-            data-en="Education &amp; stack"
-            data-es="Formación &amp; stack">Education &amp; stack</span>
-    </div>
-
-    <div class="edu-grid">
-      <!-- Left: Training -->
-      <div class="edu-col">
-        <p class="edu-col-label"
-           data-en="Training"
-           data-es="Formación">Training</p>
-
-        <div class="edu-item">
-          <div class="edu-row">
-            <span class="edu-title">UNICEN</span>
-            <span class="edu-date">2023 — present</span>
-          </div>
-          <p class="edu-subtitle">Tecnicatura en Desarrollo de Aplicaciones Informáticas</p>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-row">
-            <span class="edu-title">UTN</span>
-            <span class="edu-date"
-                  data-en="In progress"
-                  data-es="En curso">In progress</span>
-          </div>
-          <p class="edu-subtitle">Diplomado: Dominando Python — de básico a avanzado para IA</p>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-row">
-            <span class="edu-title">BIG School</span>
-            <span class="edu-date"
-                  data-en="Certified · March 2026"
-                  data-es="Certificado · Marzo 2026">Certified · March 2026</span>
-          </div>
-          <p class="edu-subtitle">Desarrollo con IA: de 0 a Producción</p>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-row">
-            <span class="edu-title">Udemy</span>
-            <span class="edu-date"
-                  data-en="In progress"
-                  data-es="En curso">In progress</span>
-          </div>
-          <p class="edu-subtitle">The Python Mega Course: Build 10 Real World Applications</p>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-row">
-            <span class="edu-title">Udemy</span>
-            <span class="edu-date"
-                  data-en="In progress"
-                  data-es="En curso">In progress</span>
-          </div>
-          <p class="edu-subtitle">Testing &amp; Quality Assurance: Guía para Pruebas de Software</p>
-        </div>
-
-        <a href="assets/cv.pdf" class="btn-cv-download" download
-           data-en="↓ Download full CV (PDF)"
-           data-es="↓ Descargar CV completo (PDF)">↓ Download full CV (PDF)</a>
-      </div>
-
-      <!-- Right: Tech stack -->
-      <div class="edu-col edu-col-right">
-        <p class="edu-col-label"
-           data-en="Tech stack"
-           data-es="Stack tecnológico">Tech stack</p>
-
-        <div class="edu-item">
-          <div class="pills">
-            <span class="pill">Python → intermediate</span>
-            <span class="pill">Folium → used in projects</span>
-            <span class="pill pill-learning">Claude API → learning</span>
-            <span class="pill pill-learning">OpenAI API → learning</span>
-            <span class="pill pill-learning">n8n → learning</span>
-            <span class="pill pill-learning">LangChain → learning</span>
-          </div>
-        </div>
-
-        <div class="edu-item">
-          <p class="edu-subtitle"
-             data-en="Languages:"
-             data-es="Idiomas:">Languages:</p>
-          <div class="pills" style="margin-top: 8px;">
-            <span class="pill"
-                  data-en="Spanish · native"
-                  data-es="Español · nativo">Spanish · native</span>
-            <span class="pill"
-                  data-en="English · professional"
-                  data-es="Inglés · profesional">English · professional</span>
-          </div>
-        </div>
-
-        <div class="edu-item">
-          <p class="edu-subtitle"
-             data-en="Soft skills:"
-             data-es="Habilidades blandas:">Soft skills:</p>
-          <div class="pills" style="margin-top: 8px;">
-            <span class="pill pill-soft"
-                  data-en="Fast learner"
-                  data-es="Aprendizaje rápido">Fast learner</span>
-            <span class="pill pill-soft"
-                  data-en="Problem solving"
-                  data-es="Resolución de problemas">Problem solving</span>
-            <span class="pill pill-soft"
-                  data-en="Team collaboration"
-                  data-es="Trabajo en equipo">Team collaboration</span>
-            <span class="pill pill-soft"
-                  data-en="Adaptability"
-                  data-es="Adaptabilidad">Adaptability</span>
-            <span class="pill pill-soft"
-                  data-en="Clear communication"
-                  data-es="Comunicación clara">Clear communication</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CONTACT ─── -->
-  <section class="section" id="contact" aria-labelledby="contact-label">
-    <div class="section-header">
-      <span class="section-num">04 //</span>
-      <span class="section-label" id="contact-label"
-            data-en="Contact"
-            data-es="Contacto">Contact</span>
-    </div>
-
-    <div class="contact-grid">
-      <!-- Left: CTA -->
-      <div class="contact-left">
-        <h2 class="contact-headline"
-            data-html="true"
-            data-en="Got a process<br>to <em>automate?</em>"
-            data-es="¿Tenés un proceso<br>para <em>automatizar?</em>">Got a process<br>to <em>automate?</em></h2>
-        <p class="contact-body"
-           data-en="Write to me and let's talk. Available for freelance projects and job opportunities."
-           data-es="Escribime y lo charlamos. Disponible para proyectos freelance y oportunidades de empleo.">Write to me and let's talk. Available for freelance projects and job opportunities.</p>
-        <a href="mailto:agusmuzi79@gmail.com" class="btn-primary"
-           data-en="Get in touch"
-           data-es="Escribirme">Get in touch</a>
-      </div>
-
-      <!-- Right: Links -->
-      <div class="contact-right">
-        <a href="mailto:agusmuzi79@gmail.com" class="contact-link" aria-label="Email Agustín Muzi">
-          <span class="contact-link-platform">Email</span>
-          <span class="contact-link-value">agusmuzi79@gmail.com</span>
-          <span class="contact-link-arrow" aria-hidden="true">→</span>
-        </a>
-        <a href="https://www.linkedin.com/in/agusmuzi79" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
-          <span class="contact-link-platform">LinkedIn</span>
-          <span class="contact-link-value">/in/agusmuzi79</span>
-          <span class="contact-link-arrow" aria-hidden="true">→</span>
-        </a>
-        <a href="https://github.com/AgusMuzi79" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
-          <span class="contact-link-platform">GitHub</span>
-          <span class="contact-link-value">/AgusMuzi79</span>
-          <span class="contact-link-arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── FOOTER ─── -->
-  <footer class="footer" role="contentinfo">
-    <span class="footer-left">© 2026 Agustín Muzi</span>
-    <span class="footer-right">AI Automation Engineer</span>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
