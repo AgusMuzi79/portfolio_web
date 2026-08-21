@@ -43,7 +43,7 @@ var currentLang = 'en';
     soon: { en: 'coming soon', es: 'próximamente', variant: 'badge--hazard' }
   };
 
-  var overlay, iconEl, titleEl, statusEl, longEl, bulletsEl, tagsEl, linkEl, closeBtn;
+  var overlay, iconEl, titleEl, statusEl, longEl, bulletsEl, galleryLabelEl, galleryEl, tagsEl, linkEl, closeBtn;
   var activeCard = null;
 
   function render(card) {
@@ -63,6 +63,22 @@ var currentLang = 'en';
       row.querySelector('span:last-child').textContent = b;
       bulletsEl.appendChild(row);
     });
+
+    galleryEl.innerHTML = '';
+    if (card.dataset.images) {
+      galleryLabelEl.hidden = false;
+      galleryEl.hidden = false;
+      card.dataset.images.split(',').forEach(function (src) {
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = '';
+        img.loading = 'lazy';
+        galleryEl.appendChild(img);
+      });
+    } else {
+      galleryLabelEl.hidden = true;
+      galleryEl.hidden = true;
+    }
 
     tagsEl.innerHTML = '';
     card.dataset.stack.split(',').forEach(function (t) {
@@ -102,6 +118,8 @@ var currentLang = 'en';
     statusEl = document.getElementById('modal-status');
     longEl = document.getElementById('modal-long');
     bulletsEl = document.getElementById('modal-bullets');
+    galleryLabelEl = document.getElementById('modal-gallery-label');
+    galleryEl = document.getElementById('modal-gallery');
     tagsEl = document.getElementById('modal-tags');
     linkEl = document.getElementById('modal-link');
     closeBtn = document.getElementById('modal-close');

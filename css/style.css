@@ -573,6 +573,14 @@ em { font-style: italic; color: var(--primary); }
 .modal__bullet { display: flex; gap: 10px; align-items: flex-start; }
 .modal__bullet-arrow { color: var(--accent); font-family: var(--font-mono); line-height: 1.5; }
 .modal__bullet span:last-child { font-size: var(--text-sm); color: var(--text); line-height: 1.5; }
+.modal__gallery {
+  display: flex; gap: 10px; overflow-x: auto; margin-bottom: 24px; padding-bottom: 4px;
+}
+.modal__gallery[hidden] { display: none; }
+.modal__gallery img {
+  height: 260px; width: auto; flex: none; border-radius: var(--radius-md);
+  border: var(--border-2) solid var(--border); background: var(--surface-inset);
+}
 .modal__tags { display: flex; gap: 7px; flex-wrap: wrap; padding-top: 20px; border-top: var(--border-2) solid var(--border); }
 .modal__link { margin-top: 22px; }
 .modal__link[hidden] { display: none; }
