@@ -187,6 +187,21 @@ a { color: var(--primary); text-decoration-thickness: 1.5px; text-underline-offs
 a:hover { color: var(--primary-hover); }
 ::selection { background: var(--selection-bg); }
 
+/* ─── SCROLLBARS ─── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--surface-inset);
+}
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--surface-inset); }
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: var(--radius-md);
+  border: 3px solid var(--surface-inset);
+}
+::-webkit-scrollbar-thumb:hover { background-color: var(--accent); }
+::-webkit-scrollbar-corner { background: var(--surface-inset); }
+
 h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; letter-spacing: var(--tracking-tight); }
 
 code, pre { font-family: var(--font-mono); }
